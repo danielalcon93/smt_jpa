@@ -12,11 +12,8 @@ https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
         <!-- Hibernate como proveedor JPA -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <!-- Entidades mapeadas -->
-        <!--
-        <class>com.eventos.modelo.Recinto</class>
-        <class>com.eventos.modelo.Evento</class>
-        <class>com.eventos.modelo.Asistente</class>
-        -->
+        <class>modelo.Viajero</class>
+        <class>modelo.Viaje</class>
 
 
         <properties>
