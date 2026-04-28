@@ -19,10 +19,6 @@ public class Viaje {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne (fetch = FetchType.EAGER)
-    @JoinColumn (name="viajero_id", nullable=false)
-    private Viajero viajero;
-
     @Column(name="linea_transporte", nullable=false)
     private String lineaTransporte;
 
@@ -46,6 +42,10 @@ public class Viaje {
 
     @Column(nullable=false)
     private Boolean incidencia;
+
+    @ManyToOne (fetch = FetchType.EAGER)
+    @JoinColumn (name="viajero_id", nullable=false)
+    private Viajero viajero;
 
 
 }

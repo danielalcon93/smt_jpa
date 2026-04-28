@@ -36,7 +36,7 @@ public class Viajero {
     @Column(name="saldo_puntos")
     private Integer saldoPuntos;
 
-    @OneToMany (mappedBy = "viajero")
+    @OneToMany (mappedBy = "viajero", fetch = FetchType.LAZY)
     @ToString.Exclude
     private List<Viaje> viajes;
 }
